@@ -26,7 +26,7 @@ a{
     padding: 40px 100px;
 }
 .link a{
-    padding: 0px 20px;
+    padding: 6px 20px;
     font-size: 14px;
 }
 
@@ -67,7 +67,7 @@ a{
 
 .getlink{
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 .get1{
     background-color: var(--Soft-Blue);
@@ -99,6 +99,7 @@ a{
 .SBlink{
     width: 40%;
     text-align: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
@@ -109,17 +110,17 @@ a{
     color: black;
 }
 .info img{
-    width: 50%;
+    width: 40%;
 }
 .info{
-    width: 80%;
+    width: 90%;
     display: flex;
     padding-top: 60px;
     padding-left: 60px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    gap: 30px;
+    gap: 3rem;
 }
 .moreinfo{
     width: 50%;
@@ -341,7 +342,7 @@ a{
         width: 90%;
     }
     .icon{
-        padding-left: 4rem;
+        padding-left: 0rem;
     }
     .logo{
         gap: 0rem;
@@ -355,14 +356,14 @@ a{
         width: 80%;
     }
     .hero img{
-        width: 100%;
+        width: 80%;
     }
     .list a{
         padding-left: 1rem;
     }
 
-    .hero img{
-        width: 80%;
+    .hero{
+        width: 60%;
         padding-top: 30px;
     }
 
@@ -374,14 +375,15 @@ a{
         /* display: grid;
         grid-template-columns: 1fr, 1; */
         text-align: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
     .subs{
-         width: 70%;
+         width: 80%;
          margin-left: auto;
          margin-right: auto;
+         padding-top: 3rem;
     }
 
     .getlink{
@@ -396,9 +398,9 @@ a{
     
     
     .hero{
-        margin-right: 2rem;
+
     }
-    .hero img{
+    .hero{
         width: 100%;
     }
     .SBlink{
@@ -407,18 +409,27 @@ a{
         gap: 20px;
     }
     .info{
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
         width: 95%;
     }
     .moreinfo{
-        margin-left: 4rem;
         padding-top: 3rem;
     }
     .tab1 img{
         width: 90%;
+    }
+    .moreinfo{
+        width: 70%;
+    }
+    .info img{
+        width: 70%;
+        padding-top: 4rem;
+    }
+    .ext{
+        width: 80%;
     }
     .box{
         display: grid;
@@ -435,31 +446,79 @@ a{
     }
     .icon{
         display: flex;
-        place-items: center;
-        margin-right: 90px;
-        padding-top: 2rem;
-        gap: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        gap: 4rem;
+        align-items: center;
+        width: 30%;
     }
     .list{
         margin-left: auto;
         margin-right: auto;
-        line-height: 2rem;
+        line-height: 6rem;
     }
     .mailsec{
-        display: grid;
-        grid-template-columns: 1fr, 1;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
         padding-left: 0rem;
     }
     .icon img{
-        width: 80%;
+        width: 100%;
     }
     .box{
-        gap: 10px;
+        gap: 50px;
         width: 90%;
     }.SBlinks{
         width: 80%;
     }
     .question{
         padding-top: 6rem;
+    }
+}
+@media screen and (max-width:480px){
+    .subs{
+        width: 90%;
+    }
+    .ftsub{
+        width: 75%;
+    }
+    .SBlink{
+        gap: 3rem;
+        padding-top: 5rem;
+    }
+    .moreinfo{
+        width: 80%;
+    }
+    .ext{
+        width: 90%;
+    }
+    .question{
+        width: 75%;
+    }
+    .getlink{
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:375px){
+    .list{
+        flex-direction: column;
+        line-height: 3rem;
+    }
+    .icon{
+        gap: 2rem;
+        width: 25%;
+    }
+    .list a{
+        font-size: 16px;
     }
 }
