@@ -14,6 +14,7 @@
 
 html,body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -142,6 +143,9 @@ a{
     margin-right: auto;
 }
 
+.navtoggle{
+    display: none;
+}
 .box{
     width: 70%;
     display: flex;
@@ -268,18 +272,12 @@ a{
 }
 #finalfooter{
     background-color: var(--Very-Dark-Blue);
-}
-.logo{
     display: flex;
-    width: 80%;
-    gap: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    padding: 2rem;
 }
+
 .list a{
     color: white;
     font-size: 13px;
@@ -288,14 +286,23 @@ a{
 .list{
     display: flex;
 }
+
 .icon img{
     width: 60%;
+}
+i{
+    font-size: 22px
 }
 .icon{
     padding-left: 5rem;
     display: flex;
     gap: 1rem;
 }
+
+.quest1.showAns p{
+    display: block;
+}
+
 @media screen and (max-width:992px) {
     .links{
         padding: 40px 40px;
@@ -331,17 +338,42 @@ a{
     .icon{
         padding-left: 0rem;
     }
-    .logo{
-        gap: 0rem;
-    }
+    
     .ftsub{
         width: 60%;
     }
 }
 @media screen and (max-width:768px){
+    .navtoggle{
+        display: block;
+    }
+    .ri-close-fill{
+        display: none;
+    }
+    .link{
+        position: absolute;
+        background-color: rgb(133, 129, 125);
+        transform: translate(-50%, -50%);
+        top: -33%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 30px;
+        text-align: center;
+        width: 65%;
+        gap: 10px;
+        transition: .6s;
+        box-shadow: 10px 10px 40px rgb(196, 196, 196);
+    }
+    .link a{
+        color: aliceblue;
+        width: 50%;
+        margin: auto;
+    }
     .SBlink{
         width: 80%;
     }
+
     .hero img{
         width: 80%;
     }
@@ -386,11 +418,6 @@ a{
 }
 
 @media screen and (max-width:572px){
-    
-    
-    .hero{
-
-    }
     .hero{
         width: 100%;
     }
@@ -427,9 +454,11 @@ a{
         grid-template-columns: 1fr, 1;
         width: 70%;
     }
-    .logo{
+    #finalfooter{
         display: grid;
-        grid-template-columns: 1fr, 1;
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
     }
     .icon img{
         width: 100%;
@@ -489,7 +518,7 @@ a{
     }
     .getlink{
         flex-direction: column;
-        width: 50%;
+        width: 60%;
         justify-content: center;
         align-items: center;
         margin-left: auto;
@@ -503,9 +532,15 @@ a{
     }
     .icon{
         gap: 2rem;
-        width: 25%;
+        width: 40%;
+    }
+    .get1 a{
+        font-size: 14px;
+    }
+    .get2 a{
+        font-size: 14px;
     }
     .list a{
-        font-size: 16px;
+        font-size: 15px;
     }
 }

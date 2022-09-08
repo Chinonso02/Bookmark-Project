@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
-
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <!-- Link css to html -->
     <link rel="stylesheet" href="/css/style.css">
     </head>
@@ -18,10 +18,16 @@
                 <div>
                     <img src="/images/logo-bookmark.svg" alt="">
                 </div>
+                
+                <div class="navtoggle">
+                    <i class="ri-menu-line" onclick="opennav()"></i>
+                    <i class="ri-close-fill" onclick="closenav()"></i>
+                </div>
+
                 <div class="link">
-                    <a href="">FEATURES</a>
-                    <a href="">PRICING</a>
-                    <a href="">CONTACT</a>
+                    <a href="#features">FEATURES</a>
+                    <a href="#boxsection">PRICING</a>
+                    <a href="#footer">CONTACT</a>
                     <a href="" class="login">LOGIN</a>
                 </div>
             </div>
@@ -87,6 +93,7 @@
                 </p>
             </div>
         </section>
+
         <section id="boxsection">
             <div class="box">
                 <div class="box1">
@@ -142,7 +149,7 @@
                     <div class="quest1">
                         <div class="quest-arrow">
                             <h3> How can I request a new browser?</h3>
-                            <img src="/images/icon-arrow.svg" alt="">
+                            <img src="/images/icon-arrow.svg" alt="" class="">
                         </div>
                         <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
                             ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros 
@@ -190,10 +197,7 @@
             </div>
         </section>
         <section id="finalfooter">
-            <div class="logo">
-                <div>
-                    <img src="/images/logo-bookmark.svg" alt="">
-                </div>
+                <img src="/images/logo-bookmark.svg" alt="">
                 <div class="list">
                     <a href="">FEATURES</a>
                     <a href="">PRICING</a>
@@ -207,7 +211,7 @@
                         <a href=""><img src="/images/icon-twitter.svg" alt=""></a>
                     </div>                      
                 </div>
-            </div>
         </section>
+        <script src="/JAVASCRIPT/Main.js"></script>
     </body>
 </html>
